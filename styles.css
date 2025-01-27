@@ -1,0 +1,153 @@
+/* Color Variables */
+:root {
+    --baby-blue: #89CFF0;
+    --yellow: #FFE566;
+    --baby-blue-dark: #5CAED5;
+    --yellow-light: #FFF0A3;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 56px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(137, 207, 240, 0.8), rgba(137, 207, 240, 0.8)), url('https://source.unsplash.com/random/1920x1080/?3d-printing');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* About Section */
+.impact-numbers {
+    padding: 2rem;
+    background-color: var(--baby-blue);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.impact-numbers h4 {
+    color: var(--yellow);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Join Us Section */
+.card {
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-info {
+    padding: 2rem;
+    background-color: var(--baby-blue);
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-info h4 {
+    color: var(--yellow);
+}
+
+/* Team Member Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.member-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid var(--baby-blue);
+}
+
+.team-member h4 {
+    color: var(--baby-blue);
+    margin-bottom: 0.5rem;
+}
+
+.team-member .text-muted {
+    color: var(--yellow) !important;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-member p:last-child {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Section Backgrounds */
+#presidents {
+    background-color: #f8f9fa;
+}
+
+#team-leads {
+    background-color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .impact-numbers h4 {
+        font-size: 2rem;
+    }
+}
+
+/* Animations */
+.navbar-brand, .nav-link {
+    transition: color 0.3s ease;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
